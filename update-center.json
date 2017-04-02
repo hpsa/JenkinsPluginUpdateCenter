@@ -1,4 +1,3 @@
-updateCenter.post(
 {
   "id": "HPE-Jenkins-plugin-center",
   "plugins": {"hp-application-automation-tools-plugin":   {
@@ -103,4 +102,3 @@ updateCenter.post(
   },
   "updateCenterVersion": "1"
 }
-);
