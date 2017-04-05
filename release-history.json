@@ -1,12 +1,12 @@
 {"releaseHistory": [{
-  "date": "Jan 16, 2017",
+  "date": "Apr 04, 2017",
   "releases": [  {
     "firstRelease": true,
-    "gav": "org.jenkins-ci.plugins:hp-application-automation-tools-plugin:5.0.0-beta-1",
+    "gav": "org.jenkins-ci.plugins:hp-application-automation-tools-plugin:5.1.0.1-beta",
     "latestRelease": true,
-    "timestamp": 1484576114000,
+    "timestamp": 1491338162000,
     "title": "HP Application Automation Tools",
-    "version": "5.0.0-beta-1",
+    "version": "5.1.0.1-beta",
     "wiki": "https://wiki.jenkins-ci.org/display/JENKINS/HP+Application+Automation+Tools"
   }]
 }]}

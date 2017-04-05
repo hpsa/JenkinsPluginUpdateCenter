@@ -2,20 +2,35 @@
 {
   "id": "HPE-Jenkins-plugin-center",
   "plugins": {"hp-application-automation-tools-plugin":   {
-    "buildDate": "Jan 16, 2017",
+    "buildDate": "Apr 04, 2017",
     "dependencies":     [
             {
-        "name": "matrix-project",
+        "name": "maven-plugin",
         "optional": false,
-        "version": "1.6"
+        "version": "2.6"
       },
             {
-        "name": "junit",
-        "optional": false,
-        "version": "1.19"
+        "name": "random-string-parameter",
+        "optional": true,
+        "version": "1.0"
       },
             {
         "name": "workflow-step-api",
+        "optional": false,
+        "version": "2.2"
+      },
+            {
+        "name": "git-client",
+        "optional": false,
+        "version": "1.19.6"
+      },
+            {
+        "name": "branch-api",
+        "optional": true,
+        "version": "1.10"
+      },
+            {
+        "name": "workflow-aggregator",
         "optional": false,
         "version": "2.2"
       },
@@ -25,19 +40,94 @@
         "version": "2.1.4"
       },
             {
+        "name": "jquery",
+        "optional": true,
+        "version": "1.7.2-1"
+      },
+            {
+        "name": "dynamicparameter",
+        "optional": true,
+        "version": "0.2.0"
+      },
+            {
+        "name": "parameterized-trigger",
+        "optional": true,
+        "version": "2.25"
+      },
+            {
+        "name": "mailer",
+        "optional": false,
+        "version": "1.16"
+      },
+            {
+        "name": "ssh-credentials",
+        "optional": false,
+        "version": "1.13"
+      },
+            {
+        "name": "pipeline-rest-api",
+        "optional": true,
+        "version": "1.7"
+      },
+            {
+        "name": "pipeline-build-step",
+        "optional": false,
+        "version": "2.2"
+      },
+            {
+        "name": "git-server",
+        "optional": true,
+        "version": "1.7"
+      },
+            {
+        "name": "junit",
+        "optional": false,
+        "version": "1.19"
+      },
+            {
+        "name": "git",
+        "optional": true,
+        "version": "2.4.4"
+      },
+            {
         "name": "structs",
         "optional": false,
         "version": "1.4"
       },
             {
-        "name": "workflow-aggregator",
+        "name": "jenkins-multijob-plugin",
+        "optional": true,
+        "version": "1.15"
+      },
+            {
+        "name": "matrix-project",
         "optional": false,
-        "version": "2.2"
+        "version": "1.6"
+      },
+            {
+        "name": "nodelabelparameter",
+        "optional": true,
+        "version": "1.5.0"
+      },
+            {
+        "name": "extended-choice-parameter",
+        "optional": true,
+        "version": "0.34"
       },
             {
         "name": "workflow-cps",
         "optional": false,
         "version": "2.6"
+      },
+            {
+        "name": "token-macro",
+        "optional": true,
+        "version": "1.12"
+      },
+            {
+        "name": "subversion",
+        "optional": true,
+        "version": "2.5"
       }
     ],
     "developers":     [
@@ -45,6 +135,11 @@
         "developerId": "YafimK",
         "email": "kazak@hpe.com",
         "name": "Fima (Yafim) Kazak"
+      },
+            {
+        "developerId": "mseldin",
+        "email": "michael.seldin@hpe.com",
+        "name": "Michael Seldin"
       },
             {
         "developerId": "Rlu",
@@ -82,22 +177,22 @@
         "name": "Chunjiang Zhu (Jacky)"
       }
     ],
-    "excerpt": "Allowing to run HP testing tools tests: Unified Functional Testing, QuickTest Professional, Service Test, Mobile Center and Performance Center",
-    "gav": "org.jenkins-ci.plugins:hp-application-automation-tools-plugin:5.0.0-beta-1",
+    "excerpt": "The plugin integrates Jenkins with the following HPE products - Service Virtualization, LoadRunner, Performance Center, Unified Functional Testing, QuickTest Professional, Service Test, Mobile Center, Application Lifecycle Management and Application Lifecycle Management Octane.",
+    "gav": "org.jenkins-ci.plugins:hp-application-automation-tools-plugin:5.1.0.1-beta",
     "name": "hp-application-automation-tools-plugin",
-    "releaseTimestamp": "2017-01-16T14:15:14.00Z",
+    "releaseTimestamp": "2017-04-04T20:36:02.00Z",
     "requiredCore": "1.642.4",
     "scm": "github.com",
-    "sha1": "WwxZH6I//s2MizPdl1I9KZtZRDM=",
+    "sha1": "2wrL+gLeGcXnkmZFYip0ywcXnME=",
     "title": "HP Application Automation Tools",
     "url": "https://updates.jenkins-ci.org/experimental/latest/hp-application-automation-tools-plugin.hpi",
-    "version": "5.0.0-beta-1",
+    "version": "5.1.0.1-beta",
     "wiki": "https://wiki.jenkins-ci.org/display/JENKINS/HP+Application+Automation+Tools"
   }},
   "signature":   {
     "certificates": ["MIICQDCCAamgAwIBAgIJALiVeg/n4PxrMA0GCSqGSIb3DQEBCwUAMDkxCzAJBgNVBAYTAklMMQ4wDAYDVQQIDAVZZWh1ZDEMMAoGA1UECgwDSFBFMQwwCgYDVQQLDANBRE0wHhcNMTYxMjE4MTY0MjAwWhcNMTkxMjE4MTY0MjAwWjA5MQswCQYDVQQGEwJJTDEOMAwGA1UECAwFWWVodWQxDDAKBgNVBAoMA0hQRTEMMAoGA1UECwwDQURNMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwadE1A2xLcOz8BJNAIPBfEM/iU67q1M+EpZhktIokxNmkR97JTTVbghCqk6uuM/N9lGGrOsfBdMtOaR1l0zqtclTjE8Doek4pgmak1dz6/iFmZX2DN7a8HQD1GQ4XzSOfiZEIWfoKMjBwh/i830fWF3CwGAeffTMPQYxkFgpXoQIDAQABo1AwTjAdBgNVHQ4EFgQUqyzqN0fPBL21QhHmucnGqOWmhV8wHwYDVR0jBBgwFoAUqyzqN0fPBL21QhHmucnGqOWmhV8wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOBgQCfAF2KonLjyVvpJSTa0t/Mjsq7kw9L58YOrcpGrwLGoPk6LAYDC7YQhj7r+Grxskf6LWtMmtDuY5eV0AGu8WR41obWuneDSESltObOrCrUMVGOxa1IRJtanejmU5a46LQJZq7X2qDa2CuyQtsUO6ZVT0FEY1QOi/RxRRooccji+g=="],
-    "correct_digest": "JTpvIuujeWDrkpidAB4UBsGz7To=",
-    "correct_signature": "W2dNQpgl6mOLopYQ1WCp62hvU/jI7EYqGfDpGrtSaePxNi1ABj02zpHWXMAzZsly+asDt2RlwnRCXp96QLkTBs3Mkpc/bi1wiAIZnwWQ8y3f51COf+AVaajd7ljpe/rHyI68fAlLo7CwRhNx5FeVo1B7KcMSFUGOZntZaqQ7yGI=",
+    "correct_digest": "NyXK2tyzenYq9/uwfxoIe3jMOfk=",
+    "correct_signature": "lME77eWPwYqU5P7dEhAvTjYtGPEj+tKMTTGM+ysAgI+a3QkBsWq44iXCiu4UV2LjWzkaTjIRXesqCTXjFBSNQObLscnZVoEHFk06ebSSDfyQX94+/vwNH4PHuxZIda9AIfb60Sd2W/ZH4eScfmchL01nPdecbUbiMKjQ11JEuQE=",
     "digest": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
     "signature": "qc6hFff0P7DYZqTvf0ioj59LYn6fmve1cmP0pJIa+kptqV8/LU6myPKUnnDghPV3nT069hMLl7AInXFUFfaPPGpkP6XKfyOOpLhDiVEXw3GeYOijeU1ShCDhT/FFAAIaJQGSh8zs87H4eYXMGsdXCIx+Ooe1QXAYL59O7AtkCvU="
   },
