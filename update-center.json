@@ -2,102 +2,12 @@ updateCenter.post(
 {
   "id": "HPE-Jenkins-plugin-center",
   "plugins": {"hp-application-automation-tools-plugin":   {
-    "buildDate": "Apr 04, 2017",
+    "buildDate": "Apr 24, 2017",
     "dependencies":     [
-            {
-        "name": "maven-plugin",
-        "optional": false,
-        "version": "2.6"
-      },
-            {
-        "name": "random-string-parameter",
-        "optional": true,
-        "version": "1.0"
-      },
-            {
-        "name": "workflow-step-api",
-        "optional": false,
-        "version": "2.2"
-      },
-            {
-        "name": "git-client",
-        "optional": false,
-        "version": "1.19.6"
-      },
             {
         "name": "branch-api",
         "optional": true,
         "version": "1.10"
-      },
-            {
-        "name": "workflow-aggregator",
-        "optional": false,
-        "version": "2.2"
-      },
-            {
-        "name": "credentials",
-        "optional": false,
-        "version": "2.1.4"
-      },
-            {
-        "name": "jquery",
-        "optional": true,
-        "version": "1.7.2-1"
-      },
-            {
-        "name": "dynamicparameter",
-        "optional": true,
-        "version": "0.2.0"
-      },
-            {
-        "name": "parameterized-trigger",
-        "optional": true,
-        "version": "2.25"
-      },
-            {
-        "name": "mailer",
-        "optional": false,
-        "version": "1.16"
-      },
-            {
-        "name": "ssh-credentials",
-        "optional": false,
-        "version": "1.13"
-      },
-            {
-        "name": "pipeline-rest-api",
-        "optional": true,
-        "version": "1.7"
-      },
-            {
-        "name": "pipeline-build-step",
-        "optional": false,
-        "version": "2.2"
-      },
-            {
-        "name": "git-server",
-        "optional": true,
-        "version": "1.7"
-      },
-            {
-        "name": "junit",
-        "optional": false,
-        "version": "1.19"
-      },
-            {
-        "name": "git",
-        "optional": true,
-        "version": "2.4.4"
-      },
-            {
-        "name": "structs",
-        "optional": false,
-        "version": "1.4"
-      },
-            {
-        "name": "jenkins-multijob-plugin",
-        "optional": true,
-        "version": "1.15"
       },
             {
         "name": "matrix-project",
@@ -105,14 +15,39 @@ updateCenter.post(
         "version": "1.6"
       },
             {
-        "name": "nodelabelparameter",
-        "optional": true,
-        "version": "1.5.0"
+        "name": "junit",
+        "optional": false,
+        "version": "1.19"
       },
             {
-        "name": "extended-choice-parameter",
+        "name": "ssh-credentials",
+        "optional": false,
+        "version": "1.13"
+      },
+            {
+        "name": "jquery",
         "optional": true,
-        "version": "0.34"
+        "version": "1.7.2-1"
+      },
+            {
+        "name": "token-macro",
+        "optional": true,
+        "version": "1.12"
+      },
+            {
+        "name": "maven-plugin",
+        "optional": false,
+        "version": "2.6"
+      },
+            {
+        "name": "structs",
+        "optional": false,
+        "version": "1.4"
+      },
+            {
+        "name": "workflow-step-api",
+        "optional": false,
+        "version": "2.2"
       },
             {
         "name": "workflow-cps",
@@ -120,9 +55,74 @@ updateCenter.post(
         "version": "2.6"
       },
             {
-        "name": "token-macro",
+        "name": "pipeline-rest-api",
         "optional": true,
-        "version": "1.12"
+        "version": "1.7"
+      },
+            {
+        "name": "mailer",
+        "optional": false,
+        "version": "1.16"
+      },
+            {
+        "name": "extended-choice-parameter",
+        "optional": true,
+        "version": "0.34"
+      },
+            {
+        "name": "git-server",
+        "optional": true,
+        "version": "1.7"
+      },
+            {
+        "name": "git",
+        "optional": true,
+        "version": "2.4.4"
+      },
+            {
+        "name": "credentials",
+        "optional": false,
+        "version": "2.1.4"
+      },
+            {
+        "name": "workflow-aggregator",
+        "optional": false,
+        "version": "2.2"
+      },
+            {
+        "name": "parameterized-trigger",
+        "optional": true,
+        "version": "2.25"
+      },
+            {
+        "name": "nodelabelparameter",
+        "optional": true,
+        "version": "1.5.0"
+      },
+            {
+        "name": "git-client",
+        "optional": false,
+        "version": "1.19.6"
+      },
+            {
+        "name": "pipeline-build-step",
+        "optional": false,
+        "version": "2.2"
+      },
+            {
+        "name": "jenkins-multijob-plugin",
+        "optional": true,
+        "version": "1.15"
+      },
+            {
+        "name": "dynamicparameter",
+        "optional": true,
+        "version": "0.2.0"
+      },
+            {
+        "name": "random-string-parameter",
+        "optional": true,
+        "version": "1.0"
       },
             {
         "name": "subversion",
@@ -178,21 +178,21 @@ updateCenter.post(
       }
     ],
     "excerpt": "The plugin integrates Jenkins with the following HPE products - Service Virtualization, LoadRunner, Performance Center, Unified Functional Testing, QuickTest Professional, Service Test, Mobile Center, Application Lifecycle Management and Application Lifecycle Management Octane.",
-    "gav": "org.jenkins-ci.plugins:hp-application-automation-tools-plugin:5.1.0.1-beta",
+    "gav": "org.jenkins-ci.plugins:hp-application-automation-tools-plugin:5.1.0.2-beta",
     "name": "hp-application-automation-tools-plugin",
-    "releaseTimestamp": "2017-04-04T20:36:02.00Z",
+    "releaseTimestamp": "2017-04-24T20:23:32.00Z",
     "requiredCore": "1.642.4",
     "scm": "github.com",
-    "sha1": "2wrL+gLeGcXnkmZFYip0ywcXnME=",
+    "sha1": "exCz6OZRRCXOslGDwIOG9DKCfNY=",
     "title": "HP Application Automation Tools",
     "url": "https://updates.jenkins-ci.org/experimental/latest/hp-application-automation-tools-plugin.hpi",
-    "version": "5.1.0.1-beta",
+    "version": "5.1.0.2-beta",
     "wiki": "https://wiki.jenkins-ci.org/display/JENKINS/HP+Application+Automation+Tools"
   }},
   "signature":   {
     "certificates": ["MIICQDCCAamgAwIBAgIJALiVeg/n4PxrMA0GCSqGSIb3DQEBCwUAMDkxCzAJBgNVBAYTAklMMQ4wDAYDVQQIDAVZZWh1ZDEMMAoGA1UECgwDSFBFMQwwCgYDVQQLDANBRE0wHhcNMTYxMjE4MTY0MjAwWhcNMTkxMjE4MTY0MjAwWjA5MQswCQYDVQQGEwJJTDEOMAwGA1UECAwFWWVodWQxDDAKBgNVBAoMA0hQRTEMMAoGA1UECwwDQURNMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwadE1A2xLcOz8BJNAIPBfEM/iU67q1M+EpZhktIokxNmkR97JTTVbghCqk6uuM/N9lGGrOsfBdMtOaR1l0zqtclTjE8Doek4pgmak1dz6/iFmZX2DN7a8HQD1GQ4XzSOfiZEIWfoKMjBwh/i830fWF3CwGAeffTMPQYxkFgpXoQIDAQABo1AwTjAdBgNVHQ4EFgQUqyzqN0fPBL21QhHmucnGqOWmhV8wHwYDVR0jBBgwFoAUqyzqN0fPBL21QhHmucnGqOWmhV8wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOBgQCfAF2KonLjyVvpJSTa0t/Mjsq7kw9L58YOrcpGrwLGoPk6LAYDC7YQhj7r+Grxskf6LWtMmtDuY5eV0AGu8WR41obWuneDSESltObOrCrUMVGOxa1IRJtanejmU5a46LQJZq7X2qDa2CuyQtsUO6ZVT0FEY1QOi/RxRRooccji+g=="],
-    "correct_digest": "NyXK2tyzenYq9/uwfxoIe3jMOfk=",
-    "correct_signature": "lME77eWPwYqU5P7dEhAvTjYtGPEj+tKMTTGM+ysAgI+a3QkBsWq44iXCiu4UV2LjWzkaTjIRXesqCTXjFBSNQObLscnZVoEHFk06ebSSDfyQX94+/vwNH4PHuxZIda9AIfb60Sd2W/ZH4eScfmchL01nPdecbUbiMKjQ11JEuQE=",
+    "correct_digest": "EzVwt77QYytIm1Y4b/95ed9LgO0=",
+    "correct_signature": "SBjb1ueoiX1KqtxIC+Ar+flmVPN0EPnbipj38CQ0rlROn+7IMKQKQTZVRR0zJfcdXCr7SiQ2aq3WmSa7NQrnayZ/wIai7r1R6x3j4UcCLxdbLWd7woIIEmpqyoHe3tnasctY53Hv7XuitirLdLo4yrBVSJmPR7Dhwoppf3kemiw=",
     "digest": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
     "signature": "qc6hFff0P7DYZqTvf0ioj59LYn6fmve1cmP0pJIa+kptqV8/LU6myPKUnnDghPV3nT069hMLl7AInXFUFfaPPGpkP6XKfyOOpLhDiVEXw3GeYOijeU1ShCDhT/FFAAIaJQGSh8zs87H4eYXMGsdXCIx+Ooe1QXAYL59O7AtkCvU="
   },
