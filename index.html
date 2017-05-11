@@ -1,32 +1,102 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="ja">
-<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0049)https://hpsa.github.io/JenkinsPluginUpdateCenter/ -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Jenkins update center for HPE plugins</title>
+	<style type="text/css">
+		@font-face {
+			font-family: 'Metric';
+			src: url(resources/Metric.eot);
+			src: url(resources/Metric.eot?#iefix) format('embedded-opentype'), url(resources/Metric.woff) format('woff'), url(resources/Metric.ttf) format('truetype');
+			font-weight: 400;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Metric';
+			src: url(resources/Metric-Semibold.eot?#iefix) format('embedded-opentype'), url(resources/Metric-Semibold.woff) format('woff'), url(resources/Metric-Semibold.otf) format('opentype'), url(resources/Metric-Semibold.ttf) format('truetype'), url(resources/Metric-Semibold.svg#Metric-Semibold) format('svg');
+			font-weight: 600;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Metric';
+			src: url(resources/Metric-Semibold.eot?#iefix) format('embedded-opentype'), url(resources/Metric-Semibold.woff) format('woff'), url(resources/Metric-Semibold.otf) format('opentype'), url(resources/Metric-Semibold.ttf) format('truetype'), url(resources/Metric-Semibold.svg#Metric-Semibold) format('svg');
+			font-weight: 700;
+			font-style: normal;
+		}
+
+		body, h1, h2, p, li {
+			font-family: 'Metric';
+		}
+		body {
+			margin: 0px;
+		}
+		h1 {
+			font-size: 36px;
+			font-weight: bold;
+		}
+		.header {
+			width: 100%;
+			background-color: rgb(66, 85, 99);
+			padding: 20px;
+		}
+		.content {
+			padding-left: 20px;
+		}
+		a:active, a:hover {
+			outline: 0;
+		}
+
+		a {
+			color: #00b388;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+		a:hover {
+			color: #00b388;
+			text-decoration: underline;
+		}
+		strong {
+			font-weight: bold;
+		}
+
+		.code {
+			background-color: rgb(247, 247, 247);
+			display: block;
+			overflow-x: auto;
+			width: 700px;
+			padding: 10px;
+		}
+	</style>
 </head>
 <body>
-<h1>Jenkins update center for HPE plugins</h1>
-<h2>Description</h2>
-<p>Here is an additional Jenkins update center to provide latest version of the jenkins plugin developed by <a title="HPE in Jenkins" href="https://wiki.jenkins-ci.org/display/JENKINS/HP+Application+Automation+Tools">HPE</a>. Plugins hosted in official Jenkins sites are not provided here.</p>
+<div class="header">
+	<img src="resources/hpe_pri_grn_rev_rgb.svg" width="132" height="55"/>
+</div>
+<div class="content">
+	<h1><strong>Jenkins update center for HPE plugins</strong></h1>
+	<h2>Description</h2>
+	<p>Here is an additional Jenkins update center to provide latest version of the jenkins plugin developed by <a title="HPE in Jenkins" href="https://wiki.jenkins-ci.org/display/JENKINS/HP+Application+Automation+Tools">HPE</a>. Plugins hosted in official Jenkins sites are not provided here.</p>
 
-<h2>How to use</h2>
-<p>To have your Jenkins access to this update center, follow these instructions:</p>
-<ol>
-	<li>Install <a href="https://wiki.jenkins-ci.org/display/JENKINS/UpdateSites+Manager+plugin">UpdateSites Manager plugin</a> to your Jenkins.</li>
+	<h2>How to use</h2>
+	<p>To have your Jenkins access to this update center, follow these instructions:</p>
 	<ol>
-		<li>Access to Jenkins, open "Manage Jenkins" &gt; "Manage Plugins".</li>
-		<li>Select Available tab, and filter with "UpdateSites Manager plugin".</li>
-		<li>Check it, and click "Install without restart".</li>
-	</ol>
-	<li>Open "Manage Jenkins" &gt; "Manage Update Center".</li>
-	<li>Add a following update site.
-		<dl>
-			<dt>id</dt>
+		<li>Install <a href="https://wiki.jenkins-ci.org/display/JENKINS/UpdateSites+Manager+plugin">UpdateSites Manager plugin</a> to your Jenkins.</li>
+		<ol>
+			<li>Access to Jenkins, open "Manage Jenkins" &gt; "Manage Plugins".</li>
+			<li>Select Available tab, and filter with "UpdateSites Manager plugin".</li>
+			<li>Check it, and click "Install without restart".</li>
+		</ol>
+		<li>Open "Manage Jenkins" &gt; "Manage Update Center".</li>
+		<li>Add a following update site.
+			<dl>
+				<dt>id</dt>
 				<dd>HPE-Jenkins-plugin-center</dd>
-			<dt>url</dt>
+				<dt>url</dt>
 				<dd>https://hpsa.github.io/JenkinsPluginUpdateCenter/update-center.json</dd>
-			<dt>CA certificate</dt>
-				<dd><pre>
------BEGIN CERTIFICATE-----
+				<dt>CA certificate</dt>
+				<dd><pre class="code">-----BEGIN CERTIFICATE-----
 MIICQDCCAamgAwIBAgIJALiVeg/n4PxrMA0GCSqGSIb3DQEBCwUAMDkxCzAJBgNV
 BAYTAklMMQ4wDAYDVQQIDAVZZWh1ZDEMMAoGA1UECgwDSFBFMQwwCgYDVQQLDANB
 RE0wHhcNMTYxMjE4MTY0MjAwWhcNMTkxMjE4MTY0MjAwWjA5MQswCQYDVQQGEwJJ
@@ -42,18 +112,17 @@ rCrUMVGOxa1IRJtanejmU5a46LQJZq7X2qDa2CuyQtsUO6ZVT0FEY1QOi/RxRRoo
 ccji+g==
 -----END CERTIFICATE-----
 				</pre></dd>
-	</li>
-	<li>Open "Manage Jenkins" &gt; "Manage Plugins" &gt; "Advanced".</li>
-	<li>Click "Check now"</li>
-</ol>
+			</dl></li>
+		<li>Open "Manage Jenkins" &gt; "Manage Plugins" &gt; "Advanced".</li>
+		<li>Click "Check now"</li>
+	</ol>
 
-<h2>Alternate way</h2>
-<p>You can have your Jenkins access to this update center without UpdateSites Manager plugin with followings:</p>
-<ol>
-	<li>Stop your Jenkins.</li>
-	<li>Open ${JENKINS_HOME}/hudson.model.UpdateCenter.xml with a text editor.</li>
-	<li>Update its contens as following:<pre>
-&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+	<h2>Alternate way</h2>
+	<p>You can have your Jenkins access to this update center without UpdateSites Manager plugin with followings:</p>
+	<ol>
+		<li>Stop your Jenkins.</li>
+		<li>Open ${JENKINS_HOME}/hudson.model.UpdateCenter.xml with a text editor.</li>
+		<li>Update its contens as following:<pre class="code">&lt;?xml version='1.0' encoding='UTF-8'?&gt;
 &lt;sites&gt;
     &lt;site&gt;
         &lt;id&gt;default&lt;/id&gt;
@@ -67,21 +136,23 @@ ccji+g==
       &lt;!-- Add Here --&gt;
 &lt;/sites&gt;
 </pre>
-	<li>Put <a title="Certificate file for ikedam Jenkins Update Center." href="HPE-update-center.crt">HPE-update-center.crt</a> in ${JENKINS_HOME}/update-center-rootCAs/ (you have to create a directory).</li>
-	<li>Start your Jenkins.</li>
-	<li>Access to Jenkins, open "Manage Jenkins" &gt; "Manage Plugins" &gt; "Advanced".</li>
-	<li>Click "Check now"</li>
-</ol>
+		</li><li>Put <a title="Certificate file for ikedam Jenkins Update Center." href="https://hpsa.github.io/JenkinsPluginUpdateCenter/HPE-update-center.crt">HPE-update-center.crt</a> in ${JENKINS_HOME}/update-center-rootCAs/ (you have to create a directory).</li>
+		<li>Start your Jenkins.</li>
+		<li>Access to Jenkins, open "Manage Jenkins" &gt; "Manage Plugins" &gt; "Advanced".</li>
+		<li>Click "Check now"</li>
+	</ol>
 
-<h2>News</h2>
-<ul>
-  <li>Jan 31, 2016  Updated the certificate. (the old one expires in Feb.)
-</ul>
+	<h2>News</h2>
+	<ul>
+		<li>Jan 31, 2016  Updated the certificate. (the old one expires in Feb.)
+		</li></ul>
 
-<h2>See Also</h2>
-<p>For details about a private update center, see <a href="https://github.com/ikedam/backend-update-center2/wiki/How-to-create-your-own-Jenkins-Update-Center" title="How to create your own Jenkins Update Center">How to create your own Jenkins Update Center</a>.
+	<h2>See Also</h2>
+	<p>For details about a private update center, see <a href="https://github.com/ikedam/backend-update-center2/wiki/How-to-create-your-own-Jenkins-Update-Center" title="How to create your own Jenkins Update Center">How to create your own Jenkins Update Center</a>.
 
-<hr>
-Copyright 2013 ikedam
-</body>
-</html>
+	</p><hr>
+	Copyright 2013 ikedam
+
+</div>
+
+</body></html>
