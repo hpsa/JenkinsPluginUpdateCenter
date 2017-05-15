@@ -185,7 +185,7 @@ updateCenter.post(
     "scm": "github.com",
     "sha1": "Dqxt5Nayy5fFsOk5LQr/jcGc3SY=",
     "title": "HP Application Automation Tools",
-    "url": "https://updates.jenkins-ci.org/experimental/latest/hp-application-automation-tools-plugin.hpi",
+    "url": "https://hpsa.github.io/JenkinsPluginUpdateCenter/hp-application-automation-tools-plugin.hpi",
     "version": "5.1.0.2-beta",
     "wiki": "https://wiki.jenkins-ci.org/display/JENKINS/HP+Application+Automation+Tools"
   }},
