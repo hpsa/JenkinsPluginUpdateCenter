@@ -126,16 +126,17 @@ hLCEY2ns4yw2QX8/naU3iF/hCLmbv4jWkvBw/w==
 		<li>Open ${JENKINS_HOME}/hudson.model.UpdateCenter.xml with a text editor.</li>
 		<li>Update its contens as following:<pre class="code">&lt;?xml version='1.0' encoding='UTF-8'?&gt;
 &lt;sites&gt;
+	&lt;site&gt;
+        &lt;id&gt;HPE-Jenkins-plugin-center&lt;/id&gt;
+        &lt;url&gt;https://hpsa.github.io/JenkinsPluginUpdateCenter/update-center.json&lt;/url&gt;
+      &lt;/site&gt;
+      &lt;!-- Add Here --&gt;
     &lt;site&gt;
         &lt;id&gt;default&lt;/id&gt;
         &lt;url&gt;http://updates.jenkins-ci.org/update-center.json&lt;/url&gt;
       &lt;/site&gt;
       &lt;!-- Add Here --&gt;
-      &lt;site&gt;
-        &lt;id&gt;HPE-Jenkins-plugin-center&lt;/id&gt;
-        &lt;url&gt;https://hpsa.github.io/JenkinsPluginUpdateCenter/update-center.json&lt;/url&gt;
-      &lt;/site&gt;
-      &lt;!-- Add Here --&gt;
+      
 &lt;/sites&gt;
 </pre>
 		</li><li>Put <a title="Certificate file for ikedam Jenkins Update Center." href="https://hpsa.github.io/JenkinsPluginUpdateCenter/HPE-update-center.crt">HPE-update-center.crt</a> in ${JENKINS_HOME}/update-center-rootCAs/ (you have to create a directory).</li>
