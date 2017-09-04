@@ -80,6 +80,28 @@
 	<p>Here is an additional Jenkins update center to provide latest version of the jenkins plugin developed by <a title="HPE in Jenkins" href="https://wiki.jenkins-ci.org/display/JENKINS/HP+Application+Automation+Tools">HPE</a>. Plugins hosted in official Jenkins sites are not provided here.</p>
 
 	<h2>How to use</h2>
+	<h2>The Jenkins offical way</h2>
+	<p>Due to issues with current Jenkins releases please use the following:</p>
+	<ol>
+		<li>Open "Manage Jenkins"</li>
+		<li>Click on "Plugin Manager"</li>
+		<li>Go to "Advanced" tab</li>
+		<li>In the "update center URL" field put in the following: "http://updates.jenkins-ci.org/experimental/update-center.json"</li>
+		<li>Click on "Check now"</li>
+		<li>Go to "available" tab</li>
+		<li>Find our plugin! click "upgrade"</li>
+		<li>Restart jenkins once install is finished</li>
+		<li>once Jenkins is restarted and plugin is installed (verify under "installed tab"):</li>
+		<ol>
+			<li>Open "Manage Jenkins"</li>
+			<li>Click on "Plugin Manager"</li>
+			<li>Go to "Advanced" tab</li>
+			<li>In the "update center URL" field put in the following: "http://updates.jenkins-ci.org/update-center.json"</li>
+		</ol>
+		<li>That's you are set to go!</li>
+	</ol>
+
+	<h2>Alternate way with our special Jenkins update center!</h2>
 	<p>To have your Jenkins access to this update center, follow these instructions:</p>
 	<ol>
 		<li>Install <a href="https://wiki.jenkins-ci.org/display/JENKINS/UpdateSites+Manager+plugin">UpdateSites Manager plugin</a> to your Jenkins.</li>
@@ -148,7 +170,8 @@ hLCEY2ns4yw2QX8/naU3iF/hCLmbv4jWkvBw/w==
 	<h2>News</h2>
 	<ul>
 		<li>Jan 31, 2016  Updated the certificate. (the old one expires in Feb.)
-		</li></ul>
+		</li>
+	</ul>
 
 	<h2>See Also</h2>
 	<p>For details about a private update center, see <a href="https://github.com/ikedam/backend-update-center2/wiki/How-to-create-your-own-Jenkins-Update-Center" title="How to create your own Jenkins Update Center">How to create your own Jenkins Update Center</a>.
