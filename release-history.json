@@ -51,13 +51,13 @@
     }]
   },
     {
-    "date": "Feb 20, 2018",
+    "date": "Mar 18, 2018",
     "releases": [    {
-      "gav": "org.jenkins-ci.plugins:hp-application-automation-tools-plugin:5.3.3-beta",
+      "gav": "org.jenkins-ci.plugins:hp-application-automation-tools-plugin:5.3.4-beta",
       "latestRelease": true,
-      "timestamp": 1519133892000,
+      "timestamp": 1521357214000,
       "title": "HPE Application Automation Tools",
-      "version": "5.3.3-beta",
+      "version": "5.3.4-beta",
       "wiki": "https://wiki.jenkins-ci.org/display/JENKINS/HPE+Application+Automation+Tools"
     }]
   }
