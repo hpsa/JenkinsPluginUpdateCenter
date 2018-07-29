@@ -77,7 +77,7 @@
 <div class="content">
 	<h1><strong>Jenkins update center for Micro Focus Jenkins CI plugins</strong></h1>
 	<h2>Description</h2>
-	<p>Here is an additional Jenkins update center to provide latest version of the jenkins plugin developed by <a title="Micro Focus in Jenkins" href="https://plugins.jenkins.io/hp-application-automation-tools-plugin">Micro Focus</a>. Plugins hosted in official Jenkins sites are not provided here.</p>
+	<p>Here is an additional Jenkins update center to provide latest version of the jenkins plugin developed by <a title="HPE in Jenkins" href="https://wiki.jenkins-ci.org/display/JENKINS/HP+Application+Automation+Tools">HPE</a>. Plugins hosted in official Jenkins sites are not provided here.</p>
 
 	<h2>How to use</h2>
 	<h2>The Jenkins official way</h2>
@@ -114,7 +114,7 @@
 		<li>Add a following update site.
 			<dl>
 				<dt>id</dt>
-				<dd>Micro-Focus-Jenkins-plugin-center</dd>
+				<dd>HPE-Jenkins-plugin-center</dd>
 				<dt>url</dt>
 				<dd>https://hpsa.github.io/JenkinsPluginUpdateCenter/update-center.json</dd>
 				<dt>CA certificate</dt>
@@ -149,7 +149,7 @@ hLCEY2ns4yw2QX8/naU3iF/hCLmbv4jWkvBw/w==
 		<li>Update its contens as following:<pre class="code">&lt;?xml version='1.0' encoding='UTF-8'?&gt;
 &lt;sites&gt;
 	&lt;site&gt;
-        &lt;id&gt;Micro-Focus-Jenkins-plugin-center&lt;/id&gt;
+        &lt;id&gt;HPE-Jenkins-plugin-center&lt;/id&gt;
         &lt;url&gt;https://hpsa.github.io/JenkinsPluginUpdateCenter/update-center.json&lt;/url&gt;
       &lt;/site&gt;
       &lt;!-- Add Here --&gt;
@@ -161,7 +161,7 @@ hLCEY2ns4yw2QX8/naU3iF/hCLmbv4jWkvBw/w==
       
 &lt;/sites&gt;
 </pre>
-		</li><li>Put <a title="Certificate file for ikedam Jenkins Update Center." href="https://hpsa.github.io/JenkinsPluginUpdateCenter/Micro-Focus-update-center.crt">Micro-Focus-update-center.crt</a> in ${JENKINS_HOME}/update-center-rootCAs/ (you have to create a directory).</li>
+		</li><li>Put <a title="Certificate file for ikedam Jenkins Update Center." href="https://hpsa.github.io/JenkinsPluginUpdateCenter/HPE-update-center.crt">HPE-update-center.crt</a> in ${JENKINS_HOME}/update-center-rootCAs/ (you have to create a directory).</li>
 		<li>Start your Jenkins.</li>
 		<li>Access to Jenkins, open "Manage Jenkins" &gt; "Manage Plugins" &gt; "Advanced".</li>
 		<li>Click "Check now"</li>
