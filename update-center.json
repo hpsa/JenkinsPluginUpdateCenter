@@ -1,6 +1,6 @@
 updateCenter.post(
 {
-  "id": "HPE-Jenkins-plugin-center",
+  "id": "Micro-Focus-Jenkins-plugin-center",
   "plugins": {"hp-application-automation-tools-plugin":   {
     "buildDate": "Jul 08, 2018",
     "dependencies":     [
